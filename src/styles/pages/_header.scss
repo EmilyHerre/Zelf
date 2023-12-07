@@ -1,0 +1,92 @@
+#Lineas {
+
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+
+
+.mediting {
+    width: 600px;
+    height: 600px;
+
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+
+    }
+}
+
+#Cara {
+    animation: move 5s linear infinite;
+
+    .st0 {
+        fill: black;
+    }
+}
+
+
+#Circulos {
+
+    animation: rotate 10s linear infinite;
+    transform-origin: 300px 350px;
+
+    .c1 {
+        animation: parpadeo 2s infinite,
+    }
+
+    .c2 {
+        animation: parpadeo 3s infinite,
+    }
+
+    .c3 {
+        animation: parpadeo 1s infinite,
+    }
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+
+    0% {
+        transform: translate(0, 10px);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    75% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 10px);
+    }
+
+}
